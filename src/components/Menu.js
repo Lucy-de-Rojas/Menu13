@@ -7,10 +7,15 @@ import { useEffect, useState } from 'react';
 
 
 
-export default function Menu({ pages, width, cornerRadius, align, backgroundBasic, colorBasic}) {
+export default function Menu({ pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover}) {
+
+
+    const [activePage,setActivePage ] = useState('home');
 
 
     console.clear();
+
+    console.log('active page::>>>>', activePage)
 
 
 // resets:
@@ -35,12 +40,79 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
     if(align=='right') {
         align='flex-end';
     }
+
+
+    // colors:
     if(!backgroundBasic) {
-        backgroundBasic='rgb(25,15,87)';
+        backgroundBasic='rgb(1, 5, 68)';
     }
     if(!colorBasic) {
-        colorBasic='white';
+        colorBasic='rgb(156, 210, 248)';
     }
+
+
+// on hover:
+    if(!backgroundHover) {
+        backgroundHover = 'rgb(156, 210, 248)';
+    }
+
+    if(!colorHover) {
+        colorHover = `rgb(1, 5, 68)`;
+    }
+
+// end of colours
+
+
+
+
+
+
+    function onMouseOver(event) {
+        console.clear();
+        console.log(event.target);
+        event.target.style.padding = '30px 5px';
+        event.target.style.fontSize = '2rem';
+
+        event.target.style.backgroundColor = `${backgroundHover}`;
+        event.target.style.color = `${colorHover}`;
+    }
+
+
+    function onMouseOut(event) {
+        console.clear();
+        console.log(event.target);
+        event.target.style.padding = '10px 5px';
+
+        event.target.style.backgroundColor = `${backgroundBasic}`;
+        event.target.style.color= `${colorBasic}`;
+        event.target.style.fontSize = '1.5rem';
+
+    }
+
+
+
+
+    function handleClick(event) {
+
+
+        console.log(event.target);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,10 +161,18 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
                     style={{
                         borderRadius: cornerRadius,
                         width: `${width}`,
+
                         backgroundColor: `${backgroundBasic}`,
                         color: `${colorBasic}`,
+
+
                     }}
                     className={className}
+
+
+                    onMouseOver={onMouseOver}
+                    onMouseOut={onMouseOut}
+                    onClick={handleClick}
 
 
 

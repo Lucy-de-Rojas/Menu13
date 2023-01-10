@@ -8,11 +8,11 @@ function App() {
     <div>
       <Menu
           pages={['home','about', 'contact']}
-          width='80%'
+          width='50%'
           cornerRadius='50px'
-          align='left'
+          align='center'
           // backgroundBasic='red'
-          colorBasic='red'
+          // colorBasic='red'
 
           />
 

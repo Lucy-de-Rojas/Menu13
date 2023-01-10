@@ -1,14 +1,22 @@
+:root {
+    --blueD: rgb(1, 5, 68);
+    --blueL: rgb(156, 210, 248);
+
+}
+
+
+
 
 a {
 
     box-sizing: border-box;
     text-decoration: none;
-    color: inherit;
     margin: 5px 0;
     padding: 10px 5px;
     text-align: center;
+    font-size: 1.5rem;
 
-
+    transition: padding 0.7s, color 0.7s, background-color 0.7s, font-size 0.7s;
 
 }
 
@@ -20,7 +28,9 @@ a {
     flex-direction: column;
     padding: 30px 0;
 
-    background-color: rgb(142, 232, 142);
+    background-color: rgb(186, 235, 195);
+
+    /* color: rgb(8, 1, 75); */
 
 }
 

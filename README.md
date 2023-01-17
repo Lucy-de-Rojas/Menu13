@@ -54,13 +54,6 @@ React/Nextjs component to for setting up menu with links to pages.
 
 
 
-
-
-
-
-
-
-
 <br /><br />
 # Github:
 https://github.com/Lucy-de-Rojas/Menu13
@@ -76,8 +69,6 @@ Any issues or suggestions welcome.
 # Colaboration
 Always on look out for projects to get my hand dirty.
 <br />
-My strengths are as below:<br />
-
 
 <img src="./src/Media/github-animation-final.gif" width="100%" />
 

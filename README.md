@@ -29,8 +29,8 @@ React/Nextjs component to for setting up menu with links to pages.
 
 ## Available arguments:
 <!-- pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected -->
-<div align="center">
-<div align="left">
+<!-- <div align="center">
+<div align="left"> -->
 
 
 >`<Menu ` <br />
@@ -40,7 +40,7 @@ React/Nextjs component to for setting up menu with links to pages.
 `align  = 'left' || 'center' || 'right'`  <br />
 `backgroundBasic  = 'red' || 'rgb(1,2,3)' || 'hls(1,2,3)'`  <br />
 
-</div></div>
+<!-- </div></div> -->
 
 ### colors:
 

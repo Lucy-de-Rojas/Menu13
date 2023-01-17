@@ -73,10 +73,11 @@ React/Nextjs component to for setting up menu with links to pages.
 </a>
 
 
-
+<br />
+<br />
 
 <a href="https://www.npmjs.com/package/@lucyderojas/menu13" target="_blank">
-<img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/NPM-logo.jpg" width="50%">/>
+<img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/NPM-logo.jpg" width="50%">
 
 </a>
 

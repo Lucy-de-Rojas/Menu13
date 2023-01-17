@@ -36,9 +36,15 @@ React/Nextjs component to for setting up menu with links to pages.
 >`<Menu ` <br />
 >>`pages = {['page1', 'page2', ...]}` <br />
 `width= '50%' || '600px'` <br />
-`cornerRadius  = '50%' || '600px''`  <br />
-`align  = 'left' || 'center' || 'right'`  <br />
-`backgroundBasic  = 'red' || 'rgb(1,2,3)' || 'hls(1,2,3)'`  <br />
+`cornerRadius  = '50%' || '6px''`  <br />
+`align  = 'left' || 'center' || 'right'`  <br /><br />
+#basic colors: <br />
+`backgroundBasic  = 'red' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#ffffff'`  <br />
+`colorBasic =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#ffffff'`<br /><br />
+#colours on hover: <br />
+`backgroundHover = 'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#ffffff'` <br />
+`colorHover =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#ffffff'`<br />
+#colours of selected item:
 
 </div>
 

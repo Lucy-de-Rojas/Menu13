@@ -55,9 +55,10 @@ React/Nextjs component to for setting up menu with links to pages.
 
 
 <br /><br />
-# Github:
+# Github & NPM:
 https://github.com/Lucy-de-Rojas/Menu13
 
+https://www.npmjs.com/package/@lucyderojas/menu13
 
 <br /><br />
 

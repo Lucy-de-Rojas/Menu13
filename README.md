@@ -27,7 +27,7 @@ React/Nextjs component to for setting up menu with links to pages.
 
 <br />
 
-## Available arguments:
+## Customise your <br /><img src='./src/Media/Logo.png' width="30%">
 <!-- pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected -->
 
 
@@ -49,8 +49,6 @@ React/Nextjs component to for setting up menu with links to pages.
 `colorSelected =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#wwwwww'`
 
 </div>
-
-### colors:
 
 
 

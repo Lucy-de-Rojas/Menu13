@@ -3,7 +3,8 @@
 
  <br />
  <img src='./src/Media/Logo.png' width='70%' />
- <br /> <br />
+
+ <br />
 
 <!-- # Introduction: -->
 React/Nextjs component to for setting up menu with links to pages.
@@ -18,9 +19,9 @@ React/Nextjs component to for setting up menu with links to pages.
 
 ## Use with default values:
 `<Menu />`
-<br /><br />
+<br />
 
-<img src='./src/Media/MenuBasic.png' width='100%'/>
+<img src='./src/Media/MenuBasic.png' width='60%'/>
 
 
 

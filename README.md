@@ -69,7 +69,7 @@ React/Nextjs component to for setting up menu with links to pages.
 <br /><br />
 # Github & NPM source code:
 <a href="https://github.com/Lucy-de-Rojas/Menu13" target="_blank" >
-<img src="./src/Media/Github-logo.jpg" width="50%" />
+<img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/Github-logo.jpg" width="50%" />
 </a>
 
 

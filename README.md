@@ -21,7 +21,7 @@ React/Nextjs component to for setting up menu with links to pages.
 `<Menu />`
 <br />
 
-<img src='./src/Media/MenuBasic.png' width='60%'/>
+<img src='./src/Media/MenuBasic.png' width='80%'/>
 
 
 

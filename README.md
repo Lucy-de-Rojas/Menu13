@@ -5,8 +5,8 @@
  <img src='./src/Media/Logo.png' width='70%' />
 
  <br />
+ <br />
 
-<!-- # Introduction: -->
 React/Nextjs component to for setting up menu with links to pages.
 
 
@@ -28,11 +28,20 @@ React/Nextjs component to for setting up menu with links to pages.
 <br />
 
 ## Available arguments:
-pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected
+<!-- pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected -->
 
-`pages= []` <br />
-`width= ''` <br />
-`corners = ''`  <br />
+<div align="left">
+
+
+>`<Menu ` <br />
+>>`pages = {['page1', 'page2', ...]}` <br />
+`width= '50%' || '600px'` <br />
+`cornerRadius  = '50%' || '600px''`  <br />
+`align  = 'left' || 'center' || 'right'`  <br />
+`backgroundBasic  = 'red' || 'rgb(1,2,3)' || 'hls(1,2,3)'`  <br />
+
+</div>
+
 ### colors:
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@lucyderojas/menu13",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/index.js",
   "files": [
@@ -11,9 +11,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animejs": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -31,7 +31,8 @@
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
-    "publish": "npm publish --access=public"
+    "publish": "npm publish --access=public",
+    "compileAndPublish": "npm run compile && npm run publish"
   },
   "eslintConfig": {
     "extends": [

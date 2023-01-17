@@ -1,6 +1,9 @@
 <div align="center">
 
-# Welcome to <br />Menu13 <br />React Component
+# Menu13 <br /> React Component
+
+# Introduction:
+React/Nextjs component to for setting up menu with links to pages.
 
 
 ## Installation:
@@ -10,14 +13,17 @@
 
 `import Menu from '@lucyderojas/menu13/dist/Menu';`
 
-## Use with no arguments:
+## Use with default values:
 `<Menu />`
+<br /><br />
 
-## Outcome:
+<img src='./src/Media/MenuBasic.png' width='100%'/>
+
 
 
 
 ## Available arguments:
+pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected
 
 `pages= []` <br />
 `width= ''` <br />

@@ -1,21 +1,69 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import  './Menu.css';
+import anime from 'animejs';
 
 import { useEffect, useState } from 'react';
 
 
 
 
-export default function Menu({ pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover}) {
+
+
+
+
+export default function Menu({ pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected}) {
+
+
+
 
 
     const [activePage,setActivePage ] = useState('home');
 
 
-    console.clear();
 
-    console.log('active page::>>>>', activePage)
+
+
+
+
+    useEffect(()=>{
+        console.clear();
+
+        let pathname = window.location.pathname;
+        pathname = pathname.replace(/\//,'');
+        if(pathname == '') {
+            pathname='home'
+        }
+        setActivePage(pathname);
+
+
+// highlight ative page link:
+
+        let target = document.querySelector(`.${pathname}`);
+        console.log('target:>>>>', target);
+
+
+        target.style.padding = '30px 5px';
+        target.style.fontSize = '2rem';
+
+        target.style.backgroundColor = `${backgroundSelected}`;
+        target.style.color = `${colorSelected}`;
+
+
+
+
+
+
+
+    },[]);
+
+
+
+
+
+
+
+
 
 
 // resets:
@@ -42,22 +90,32 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
     }
 
 
-    // colors:
+    // basic colors:
     if(!backgroundBasic) {
-        backgroundBasic='rgb(1, 5, 68)';
+        backgroundBasic='#b8e1ffff';
     }
     if(!colorBasic) {
-        colorBasic='rgb(156, 210, 248)';
+        colorBasic='#363457ff';
     }
 
 
 // on hover:
     if(!backgroundHover) {
-        backgroundHover = 'rgb(156, 210, 248)';
+        backgroundHover = '#465c69ff';
     }
 
     if(!colorHover) {
-        colorHover = `rgb(1, 5, 68)`;
+        colorHover = `WHITE`;
+    }
+
+
+
+// on selected:
+    if(!backgroundSelected) {
+        backgroundSelected = '#e8aeb7ff';
+    }
+    if(!colorSelected) {
+        colorSelected='white';
     }
 
 // end of colours
@@ -66,10 +124,10 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 
 
 
-
     function onMouseOver(event) {
-        console.clear();
-        console.log(event.target);
+        // event.preventDefault();
+        // console.clear();
+        // console.log(event.target);
         event.target.style.padding = '30px 5px';
         event.target.style.fontSize = '2rem';
 
@@ -78,14 +136,35 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
     }
 
 
+
+
+
+
+
     function onMouseOut(event) {
-        console.clear();
-        console.log(event.target);
+
+// go back to normal:
         event.target.style.padding = '10px 5px';
 
         event.target.style.backgroundColor = `${backgroundBasic}`;
         event.target.style.color= `${colorBasic}`;
         event.target.style.fontSize = '1.5rem';
+
+
+
+
+
+// keep active page link highlighted:
+        let target = document.querySelector(`.${activePage}`);
+
+        target.style.padding = '30px 5px';
+        target.style.backgroundColor = `${backgroundSelected}`;
+        target.style.color = `${colorSelected}`;
+        target.style.fontSize = '2rem';
+
+
+
+
 
     }
 
@@ -94,8 +173,17 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 
     function handleClick(event) {
 
+        let target = event.target.style;
+        // event.preventDefault();
 
-        console.log(event.target);
+
+
+
+        // console.log('on click:>>>>', event.target.className);
+        target.transition = 'padding 0.7s, color 0.7s, background-color 0.7s, font-size 0.7s';
+
+        target.padding = '10px 5px';
+
 
     }
 
@@ -127,7 +215,7 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
     <div>
 
 
-        <h1>Pages:</h1>
+
 
 
 
@@ -147,7 +235,9 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 
         let href=`/${item}`;
 
-        let className = `link ${item}`;
+
+        let classNameLong = `link ${item}`;
+        let classNameShort = `${item}`;
 
 
         if(item == 'home') {
@@ -167,7 +257,7 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 
 
                     }}
-                    className={className}
+                    className={classNameLong}
 
 
                     onMouseOver={onMouseOver}
@@ -191,7 +281,6 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
     </div>
 
 
-    <a href='/'>hello</a>
 
     </div>
   );
@@ -209,6 +298,8 @@ Menu.propTypes = {
     pages: PropTypes.array,
     width: PropTypes.string,
 };
+
+
 
 Menu.defaultProps = {
   pages:['home','about','contact'],

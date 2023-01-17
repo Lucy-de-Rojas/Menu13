@@ -1,8 +1,9 @@
 <div align="center">
 
 
+<!-- https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/Logo.png -->
  <br />
- <img src='./src/Media/Logo.png' width='70%' />
+ <img src='https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/Logo.png' width='70%' />
 
  <br />
  <br />
@@ -21,13 +22,14 @@ React/Nextjs component to for setting up menu with links to pages.
 `<Menu />`
 <br />
 
-<img src='./src/Media/MenuBasic.png' width='80%'/>
+<img src='https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/MenuBasic.png' width='80%'/>
 
 
 
 <br />
 
-<h1>Customise your <br /><img src='./src/Media/Logo.png' width="30%"></h1>
+<h1>Customise your <br />
+<img src='https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/Logo.png' width="30%"></h1>
 <!-- pages, width, cornerRadius, align, backgroundBasic, colorBasic, backgroundHover, colorHover, backgroundSelected, colorSelected -->
 
 
@@ -38,15 +40,25 @@ React/Nextjs component to for setting up menu with links to pages.
 `width= '50%' || '600px'` <br />
 `cornerRadius  = '50%' || '6px''`  <br />
 `align  = 'left' || 'center' || 'right'`  <br /><br />
+
+
 #basic colors: <br />
 `backgroundBasic  = 'red' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#ffffff'`  <br />
 `colorBasic =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#000000'`<br /><br />
+
+
+
 #colours on hover: <br />
 `backgroundHover = 'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#gggggg'` <br />
 `colorHover =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#rrrrrr'`<br /><br />
 #colours of selected item:<br />
+
+
+
 `backgroundSelected =  'blue' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#333333'` <br />
 `colorSelected =  'white' || 'rgb(1,2,3)' || 'hls(1,2,3)' || '#wwwwww'`
+
+>`/>`
 
 </div>
 
@@ -55,10 +67,15 @@ React/Nextjs component to for setting up menu with links to pages.
 
 
 <br /><br />
-# Github & NPM:
-https://github.com/Lucy-de-Rojas/Menu13
+# Github & NPM source code:
+<a href="https://github.com/Lucy-de-Rojas/Menu13" target="_blank" >
+<img src="./src/Media/Github-logo.jpg" width="50%" />
+</a>
 
-https://www.npmjs.com/package/@lucyderojas/menu13
+
+
+
+<a href="https://www.npmjs.com/package/@lucyderojas/menu13" target="">NPM</a>
 
 <br /><br />
 
@@ -71,7 +88,7 @@ Any issues or suggestions welcome.
 Always on look out for projects to get my hand dirty.
 <br />
 
-<img src="./src/Media/github-animation-final.gif" width="100%" />
+<img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/Media/github-animation-final.gif" width="100%" />
 
 
 </div>

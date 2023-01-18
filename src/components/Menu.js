@@ -223,6 +223,7 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 <div className='menuWrapper' style={{
     // width: width,
     alignItems: `${align}`,
+
 }}>
 
 
@@ -254,6 +255,9 @@ export default function Menu({ pages, width, cornerRadius, align, backgroundBasi
 
                         backgroundColor: `${backgroundBasic}`,
                         color: `${colorBasic}`,
+
+
+
 
 
                     }}

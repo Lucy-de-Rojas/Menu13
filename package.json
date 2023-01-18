@@ -1,12 +1,13 @@
 {
   "name": "@lucyderojas/menu13",
-  "version": "1.0.5",
+  "version": "1.0.10",
   "private": false,
   "main": "dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
+  "keywords": ["react","menu","pages", "links", "customisable", "component","front end", "next js"],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

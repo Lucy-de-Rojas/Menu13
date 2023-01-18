@@ -7,9 +7,9 @@
 
  <br />
  <br />
- <img src="" width="" />
-<b>
-React</b> component to for setting up menu with links to pages.
+ <img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13/master/src/React-logo.jpg" width="40%" />
+<br />
+component to for setting up menu with links to pages.
 
 
 ## Installation:

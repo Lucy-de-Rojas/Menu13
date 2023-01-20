@@ -84,6 +84,16 @@ component to for setting up menu with links to pages.
 # Comments Welcome
 Any issues or suggestions welcome.
 
+<br /><br />
+
+<img src="https://raw.githubusercontent.com/Lucy-de-Rojas/Menu13-Next/master/src/Next-logo.jpg" width="50%" />
+
+
+# Version:
+<a href='https://www.npmjs.com/package/@lucyderojas/menu13-next'>
+>> Next version link <<
+</a>
+
 
 <br /><br />
 # Colaboration
